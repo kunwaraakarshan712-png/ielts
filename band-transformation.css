@@ -1,0 +1,266 @@
+/* =========================
+   CINEMATIC HERO ENTRANCE
+========================= */
+
+.hero-entrance {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-entrance.cinematic-in .cinematic-text-main {
+  animation: cinematic-zoom-out 2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hero-entrance.cinematic-in .cinematic-text-sub {
+  animation: cinematic-zoom-out 2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-entrance.cinematic-in .cinematic-text-desc {
+  animation: cinematic-zoom-out 2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s forwards;
+  opacity: 0;
+}
+
+@keyframes cinematic-zoom-out {
+  0% {
+    font-size: 180px;
+    opacity: 1;
+    transform: scale(2) translateY(-100px);
+    letter-spacing: -20px;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    font-size: clamp(54px, 7vw, 92px);
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    letter-spacing: -6px;
+  }
+}
+
+.cinematic-text-main,
+.cinematic-text-sub,
+.cinematic-text-desc {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  will-change: transform, font-size, letter-spacing;
+}
+
+.cinematic-text-main {
+  font-size: 180px;
+  line-height: 0.8;
+  letter-spacing: -20px;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.cinematic-text-main .red {
+  color: var(--red);
+}
+
+.cinematic-text-sub {
+  font-size: 24px;
+  color: var(--red);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.cinematic-text-desc {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 500px;
+  line-height: 1.6;
+  opacity: 0;
+  margin-top: 20px;
+}
+
+/* =========================
+   BAND TRANSFORMATION SECTION
+========================= */
+
+.band-transformation-section {
+  position: relative;
+  min-height: 300vh;
+  background: linear-gradient(
+    180deg,
+    var(--ink) 0%,
+    #0D1A2B 50%,
+    var(--ink) 100%
+  );
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.band-transformation-section::before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 31, 54, 0.15), transparent);
+  top: -200px;
+  right: -200px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.band-transformation-section::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(22, 59, 101, 0.2), transparent);
+  bottom: -100px;
+  left: -100px;
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.band-transform-sticky {
+  position: sticky;
+  top: 50vh;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.band-transform-label {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #98A2B3;
+  margin-bottom: 30px;
+  animation: fade-in-up 0.8s ease forwards;
+}
+
+.band-transform-score {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(100px, 20vw, 280px);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -10px;
+  color: white;
+  margin-bottom: 40px;
+  will-change: transform, text-shadow;
+  transition: text-shadow 0.3s ease;
+  
+  background: linear-gradient(135deg, #FFFFFF 0%, #D1D5DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.band-transform-description {
+  font-size: 18px;
+  color: #98A2B3;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  animation: fade-in-up 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.band-progress-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #C91F36, #A9182C);
+  width: 0%;
+  z-index: 999;
+  will-change: width;
+  box-shadow: 0 0 20px rgba(201, 31, 54, 0.6);
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  .band-transformation-section {
+    min-height: 400vh;
+  }
+
+  .band-transform-score {
+    font-size: clamp(60px, 15vw, 140px);
+    letter-spacing: -5px;
+  }
+
+  .band-transform-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .band-transform-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .band-transformation-section {
+    min-height: 500vh;
+  }
+
+  .band-transform-score {
+    font-size: clamp(48px, 12vw, 100px);
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+  }
+
+  .band-transform-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+  }
+}
+
+/* =========================
+   ANIMATE IN CLASS
+========================= */
+
+.animate-in.fade-in-up {
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animation for child elements */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.stagger-children > *.animate-in:nth-child(1) {
+  animation: fade-in-up 0.6s ease 0.1s forwards;
+}
+
+.stagger-children > *.animate-in:nth-child(2) {
+  animation: fade-in-up 0.6s ease 0.2s forwards;
+}
+
+.stagger-children > *.animate-in:nth-child(3) {
+  animation: fade-in-up 0.6s ease 0.3s forwards;
+}
+
+.stagger-children > *.animate-in:nth-child(4) {
+  animation: fade-in-up 0.6s ease 0.4s forwards;
+}
+
+.stagger-children > *.animate-in:nth-child(5) {
+  animation: fade-in-up 0.6s ease 0.5s forwards;
+}
