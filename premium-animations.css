@@ -1,0 +1,445 @@
+/* =========================
+   PREMIUM MICROINTERACTIONS
+   IELTS MASTER
+========================= */
+
+/* =========================
+   NAVIGATION ACTIVE LINE
+========================= */
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #C91F36;
+  transition: width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   PREMIUM BUTTON ANIMATIONS
+========================= */
+
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px rgba(201, 31, 54, 0.24);
+}
+
+/* Arrow pulse effect */
+.btn-primary .arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-primary:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* =========================
+   SCROLLING MARQUEE
+========================= */
+
+.marquee-section {
+  background: var(--ink);
+  color: white;
+  padding: 40px 0;
+  overflow: hidden;
+  margin: 60px 0;
+}
+
+.marquee-wrapper {
+  display: flex;
+  gap: 60px;
+  animation: scroll-left 30s linear infinite;
+  width: fit-content;
+}
+
+.marquee-item {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.marquee-item::after {
+  content: "•";
+  margin-left: 60px;
+  color: #C91F36;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause on hover */
+.marquee-wrapper:hover {
+  animation-play-state: paused;
+}
+
+/* =========================
+   STICKY NAVBAR TRANSFORMATION
+========================= */
+
+nav {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+nav.scrolled {
+  height: 70px;
+  background: rgba(250, 251, 252, 0.95);
+  box-shadow: 0 8px 24px rgba(7, 17, 31, 0.12);
+}
+
+nav.scrolled .nav-inner {
+  height: 70px;
+}
+
+/* =========================
+   PARALLAX MOVEMENT
+========================= */
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* JavaScript will handle the actual parallax calculation */
+[data-parallax] {
+  will-change: transform;
+}
+
+/* =========================
+   LOADING SCREEN
+========================= */
+
+.loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fade-out 0.8s ease 2.2s forwards;
+  pointer-events: none;
+}
+
+.loader-screen.hidden {
+  display: none;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.loader-logo {
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+.loader-logo span {
+  color: #C91F36;
+}
+
+.loader-line {
+  width: 60px;
+  height: 1px;
+  background: var(--line);
+  margin: 20px auto;
+  animation: expand-line 1.5s ease-in-out infinite;
+}
+
+@keyframes expand-line {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 60px;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* =========================
+   SMOOTH SCROLL ANIMATIONS
+========================= */
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+@keyframes fade-in-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* =========================
+   CARD HOVER EFFECTS
+========================= */
+
+.approach-card {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: translateY(0);
+}
+
+.approach-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(22, 59, 101, 0.2);
+}
+
+.problem-card {
+  transition: all 0.3s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(7, 17, 31, 0.08);
+}
+
+/* =========================
+   INPUT FOCUS ANIMATIONS
+========================= */
+
+input,
+textarea {
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(201, 31, 54, 0.1),
+              0 0 0 1px #C91F36;
+}
+
+/* =========================
+   PROGRESS INDICATORS
+========================= */
+
+.progress-bar {
+  height: 4px;
+  background: var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #C91F36, #A9182C);
+  border-radius: inherit;
+  animation: fill-progress 2s ease-out;
+}
+
+@keyframes fill-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress, 100%);
+  }
+}
+
+/* =========================
+   TOOLTIP ANIMATIONS
+========================= */
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: var(--ink);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+[data-tooltip]::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2px);
+  width: 6px;
+  height: 6px;
+  background: var(--ink);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =========================
+   GRADIENT TEXT ANIMATION
+========================= */
+
+.gradient-text {
+  background: linear-gradient(135deg, #C91F36 0%, #07111F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* =========================
+   MEDIA QUERIES - RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+  .marquee-item {
+    font-size: 18px;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+  }
+
+  .loader-logo {
+    font-size: 36px;
+  }
+
+  [data-tooltip]::before {
+    font-size: 10px;
+  }
+
+  .approach-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-section {
+    padding: 30px 0;
+    margin: 40px 0;
+  }
+
+  .marquee-item {
+    font-size: 16px;
+  }
+
+  .loader-logo {
+    font-size: 28px;
+  }
+
+  nav.scrolled {
+    height: 65px;
+  }
+
+  nav.scrolled .nav-inner {
+    height: 65px;
+  }
+}
