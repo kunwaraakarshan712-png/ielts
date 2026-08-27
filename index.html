@@ -7,7 +7,7 @@
 
   <title>IELTS Online Class in Nepal | IELTS MASTER — Rs. 500</title>
 
-  <meta name="description" content="IELTS MASTER is a focused 3-hour online IELTS preparation masterclass in Nepal covering Listening, Reading, Writing, Speaking, scoring criteria, practical strategies and test-day preparation for Rs. 500.">
+  <meta name="description" content="IELTS MASTER is a focused 3-hour online IELTS preparation masterclass in Nepal covering Listening, Reading, Writing, Speaking, scoring criteria, practical strategies, and test-day preparation for only Rs. 500.">
 
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="IELTS MASTER">
@@ -30,6 +30,16 @@
   <meta name="twitter:description" content="Prepare smarter for IELTS with a focused 3-hour masterclass covering all four skills and practical strategies.">
   <meta name="twitter:image" content="https://ielts-rho-six.vercel.app/og-image.jpg">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F96P7MWBMV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F96P7MWBMV');
+  </script>
+
   <!-- PREMIUM TYPOGRAPHY -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +52,7 @@
     "@context":"https://schema.org",
     "@type":"Course",
     "name":"IELTS MASTER Course",
-    "description":"A focused 3-hour online IELTS preparation masterclass for students in Nepal covering Listening, Reading, Writing, Speaking, scoring criteria, practical strategies, common mistakes and test-day preparation.",
+    "description":"A focused 3-hour online IELTS preparation masterclass for students in Nepal covering Listening, Reading, Writing, Speaking, scoring criteria, practical strategies, common mistakes, and test-day preparation.",
     "provider":{
       "@type":"Organization",
       "name":"IELTS MASTER",
@@ -998,779 +1008,160 @@ nav{
 
   color:var(--muted);
   font-size:14px;
-  line-height:1.8;
+  line-height:1.65;
 }
 
-.module.open .module-content{
+.module.active .module-content{
   display:block;
 }
 
-.module.open .module-icon{
-  background:var(--ink);
-  color:white;
-  border-color:var(--ink);
-}
-
-/* =========================
-   FOUR SKILLS
-========================= */
-
-.skills-section{
-  background:var(--paper);
-}
-
-.skill-grid{
-  margin-top:55px;
-
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-}
-
-.skill-card{
-  background:white;
-  border:1px solid var(--line);
-  padding:30px;
-  min-height:310px;
-
-  position:relative;
-  overflow:hidden;
-
-  transition:.25s ease;
-}
-
-.skill-card:hover{
-  transform:translateY(-5px);
-  box-shadow:var(--shadow-sm);
-}
-
-.skill-card::after{
-  content:"";
-  position:absolute;
-  right:-45px;
-  bottom:-45px;
-
-  width:130px;
-  height:130px;
-
-  border-radius:50%;
-
-  background:#F3F5F7;
-}
-
-.skill-number{
-  font-family:"Manrope",sans-serif;
-  font-size:46px;
-  font-weight:800;
-  letter-spacing:-3px;
-
-  color:#E4E7EC;
-
-  margin-bottom:70px;
-}
-
-.skill-card h3{
-  font-family:"Manrope",sans-serif;
-  font-size:16px;
-  margin-bottom:10px;
-}
-
-.skill-card p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-/* =========================
-   IELTS FORMAT
-========================= */
-
-.format-section{
-  background:white;
-}
-
-.format-grid{
-  margin-top:55px;
-
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-}
-
-.format-card{
-  padding:30px;
-
-  border:1px solid var(--line);
-  background:#FCFCFD;
-
-  min-height:210px;
-}
-
-.format-card span{
-  font-size:10px;
-  color:var(--red);
-  font-weight:800;
-  letter-spacing:1px;
-}
-
-.format-card h3{
-  font-family:"Manrope",sans-serif;
-  font-size:17px;
-  margin:30px 0 10px;
-}
-
-.format-card p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-/* =========================
-   CALCULATOR
-========================= */
-
-.calculator-section{
-  background:#F3F5F7;
-}
-
-.calculator{
-  margin-top:55px;
-
-  background:var(--ink);
-  color:white;
-
-  border-radius:25px;
-  padding:42px;
-
-  box-shadow:var(--shadow);
-}
-
-.calc-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-}
-
-.calc-input label{
-  display:block;
-
-  font-size:10px;
-  font-weight:800;
-  color:#98A2B3;
-
-  letter-spacing:1px;
-  margin-bottom:8px;
-}
-
-.calc-input input{
-  width:100%;
-
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.06);
-
-  color:white;
-
-  border-radius:10px;
-
-  padding:14px;
-
-  outline:none;
-
-  font-size:14px;
-}
-
-.calc-input input:focus{
-  border-color:#6B7F96;
-}
-
-.calc-action{
-  margin-top:20px;
-}
-
-.calc-result{
-  margin-top:20px;
-
-  padding:18px;
-
-  border:1px solid rgba(255,255,255,.1);
-  background:rgba(255,255,255,.04);
-
-  border-radius:10px;
-
-  color:#D0D5DD;
-
-  font-size:13px;
-}
-
-.calculator-note{
-  margin-top:12px;
-  color:#667085;
-  font-size:11px;
-}
-
-/* =========================
-   CRITERIA
-========================= */
-
-.criteria-grid{
-  margin-top:55px;
-
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-}
-
-.criteria-card{
-  padding:30px;
-
-  background:white;
-  border:1px solid var(--line);
-
-  transition:.25s ease;
-}
-
-.criteria-card:hover,
-.criteria-card.active{
-  border-color:var(--red);
-  box-shadow:var(--shadow-sm);
-}
-
-.criteria-card h3{
-  font-family:"Manrope",sans-serif;
-  font-size:16px;
-  line-height:1.4;
-  margin-bottom:12px;
-}
-
-.criteria-card p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-.criteria-detail{
-  margin-top:15px;
-
-  padding:28px 30px;
-
-  background:#F7F8FA;
-  border:1px solid var(--line);
-
-  color:var(--muted);
-  font-size:14px;
-}
-
-.criteria-detail strong{
-  color:var(--ink);
-}
-
-/* =========================
-   MISTAKES
-========================= */
-
-.mistakes-section{
-  background:white;
-}
-
-.mistakes-grid{
-  margin-top:55px;
-
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-
-  border-top:1px solid var(--line);
-  border-left:1px solid var(--line);
-}
-
-.mistake{
-  min-height:130px;
-
-  padding:25px;
-
-  border-right:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-
-  display:flex;
-  align-items:center;
-  gap:15px;
-}
-
-.mistake-icon{
-  width:28px;
-  height:28px;
-
-  flex:none;
-
-  border:1px solid #F0B4BC;
-  color:var(--red);
-
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:12px;
-}
-
-.mistake h3{
-  font-family:"Manrope",sans-serif;
-  font-size:14px;
-}
-
-/* =========================
-   WHO IT'S FOR
-========================= */
-
-.audience{
-  background:var(--ink);
-  color:white;
-}
-
-.audience .section-title{
-  color:white;
-}
-
-.audience .section-subtitle{
-  color:#98A2B3;
-}
-
-.audience-grid{
-  margin-top:55px;
-
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-
-  gap:10px;
-}
-
-.audience-card{
-  background:#0C192A;
-
-  border:1px solid rgba(255,255,255,.08);
-
-  padding:25px;
-
-  display:flex;
-  align-items:center;
-  gap:16px;
-
-  min-height:88px;
-}
-
-.audience-check{
-  width:28px;
-  height:28px;
-
-  flex:none;
-
-  border-radius:50%;
-
+.module.active .module-icon{
   background:var(--red);
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:12px;
-}
-
-.audience-card h3{
-  font-family:"Manrope",sans-serif;
-  font-size:14px;
-}
-
-/* =========================
-   HONEST POSITIONING
-========================= */
-
-.honest{
-  background:#F3F5F7;
-}
-
-.honest-grid{
-  margin-top:55px;
-
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-}
-
-.honest-card{
-  background:white;
-  border:1px solid var(--line);
-
-  padding:32px;
-  min-height:240px;
-}
-
-.honest-card .icon{
-  width:36px;
-  height:36px;
-
-  border-radius:9px;
-
-  background:#FEECEF;
-  color:var(--red);
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  margin-bottom:45px;
-}
-
-.honest-card h3{
-  font-family:"Manrope",sans-serif;
-  font-size:17px;
-  margin-bottom:10px;
-}
-
-.honest-card p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-/* =========================
-   CHECKLIST
-========================= */
-
-.checklist-section{
-  background:white;
-}
-
-.checklist{
-  max-width:800px;
-  margin:55px auto 0;
-
-  display:grid;
-  gap:8px;
-}
-
-.check-item{
-  border:1px solid var(--line);
-  background:#FCFCFD;
-
-  padding:15px 18px;
-
-  border-radius:10px;
-}
-
-.check-item label{
-  display:flex;
-  align-items:center;
-  gap:12px;
-
-  font-size:13px;
-  color:#344054;
-  cursor:pointer;
-}
-
-.check-item input{
-  accent-color:var(--red);
-}
-
-.check-button{
-  margin-top:10px;
-}
-
-#checkMessage{
-  text-align:center;
-  color:var(--green);
-  font-size:12px;
-}
-
-/* =========================
-   PRICING
-========================= */
-
-.pricing-section{
-  background:#F3F5F7;
-}
-
-.pricing-card{
-  position:relative;
-
-  max-width:900px;
-  margin:55px auto 0;
-
-  background:var(--ink);
   color:white;
-
-  border-radius:28px;
-
-  padding:55px;
-
-  overflow:hidden;
-
-  box-shadow:0 35px 90px rgba(7,17,31,.16);
-}
-
-.pricing-card::before{
-  content:"";
-  position:absolute;
-
-  width:450px;
-  height:450px;
-
-  border-radius:50%;
-
-  background:rgba(22,59,101,.3);
-
-  right:-200px;
-  top:-250px;
-}
-
-.pricing-content{
-  position:relative;
-  z-index:1;
-
-  display:grid;
-  grid-template-columns:1fr .7fr;
-  gap:60px;
-  align-items:center;
-}
-
-.pricing-card h2{
-  font-family:"Manrope",sans-serif;
-  font-size:46px;
-  letter-spacing:-2px;
-  line-height:1.05;
-  margin-bottom:15px;
-}
-
-.pricing-card .sub{
-  color:#98A2B3;
-  font-size:14px;
-}
-
-.price{
-  font-family:"Manrope",sans-serif;
-  font-size:64px;
-  font-weight:800;
-  letter-spacing:-4px;
-}
-
-.price small{
-  display:block;
-  font-family:"DM Sans",sans-serif;
-  color:#98A2B3;
-  font-size:11px;
-  font-weight:500;
-  letter-spacing:0;
-}
-
-.price-list{
-  margin-top:25px;
-
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:9px 20px;
-
-  list-style:none;
-}
-
-.price-list li{
-  color:#D0D5DD;
-  font-size:12px;
-}
-
-.price-list li::before{
-  content:"✓";
-  color:#65D6A4;
-  margin-right:8px;
-}
-
-.pricing-action{
-  margin-top:28px;
-}
-
-/* =========================
-   REVIEWS
-========================= */
-
-.reviews{
-  background:white;
-}
-
-.review-placeholder{
-  max-width:650px;
-  margin:50px auto 0;
-
-  border:1px solid var(--line);
-  padding:35px;
-
-  text-align:center;
-}
-
-.review-placeholder h3{
-  font-family:"Manrope",sans-serif;
-  margin-bottom:8px;
-}
-
-.review-placeholder p{
-  color:var(--muted);
-  font-size:13px;
+  border-color:var(--red);
 }
 
 /* =========================
    FAQ
 ========================= */
 
-.faq-section{
-  background:#F3F5F7;
+.faq{
+  background:white;
 }
 
-.faq{
-  max-width:850px;
-  margin:55px auto 0;
+.faq-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:32px;
+  margin-top:60px;
 }
 
 .faq-item{
-  background:white;
   border:1px solid var(--line);
-
-  margin-bottom:8px;
-
-  border-radius:11px;
-  overflow:hidden;
+  border-radius:20px;
+  padding:32px;
 }
 
-.faq-question{
-  width:100%;
+.faq-item summary{
+  list-style:none;
+  cursor:pointer;
 
-  border:0;
-  background:white;
-
-  padding:20px 22px;
+  font-weight:600;
+  color:var(--text);
 
   display:flex;
   justify-content:space-between;
   align-items:center;
-
-  text-align:left;
-
-  cursor:pointer;
-
-  font-family:"Manrope",sans-serif;
-  font-size:14px;
-  font-weight:700;
-
-  color:var(--ink);
+  gap:20px;
 }
 
-.faq-question span{
-  width:25px;
-  height:25px;
+.faq-item summary::after{
+  content:"";
+  width:20px;
+  height:20px;
+  flex-shrink:0;
 
-  border:1px solid var(--line);
+  background:var(--red);
   border-radius:50%;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  color:#667085;
+  position:relative;
 }
 
-.faq-answer{
-  display:none;
+.faq-item summary::before{
+  content:"";
+  width:2px;
+  height:12px;
+  background:white;
 
-  padding:0 22px 22px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
 
+.faq-item details summary::before{
+  width:12px;
+  height:2px;
+}
+
+.faq-item summary:hover{
+  color:var(--red);
+}
+
+.faq-item p{
+  margin-top:20px;
   color:var(--muted);
-  font-size:13px;
+  font-size:14px;
   line-height:1.7;
 }
 
-.faq-item.open .faq-answer{
-  display:block;
-}
-
-.faq-item.open .faq-question span{
-  background:var(--ink);
-  color:white;
-  border-color:var(--ink);
-}
-
 /* =========================
-   FINAL CTA
+   CTA SECTION
 ========================= */
 
-.final-cta{
-  background:var(--ink);
+.cta-section{
+  background:linear-gradient(135deg, var(--ink) 0%, #0D1A2B 100%);
   color:white;
-
-  text-align:center;
-
-  padding:140px 20px;
-
   position:relative;
   overflow:hidden;
 }
 
-.final-cta::before{
+.cta-section::before{
   content:"";
   position:absolute;
-
-  width:600px;
-  height:600px;
-
+  width:500px;
+  height:500px;
   border-radius:50%;
 
-  background:rgba(22,59,101,.28);
+  background:rgba(201,31,54,.1);
 
-  left:50%;
-  top:-400px;
+  top:-250px;
+  left:-100px;
 
-  transform:translateX(-50%);
+  filter:blur(60px);
 }
 
-.final-cta-content{
+.cta-section::after{
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  border-radius:50%;
+
+  background:rgba(22,59,101,.15);
+
+  bottom:-150px;
+  right:-100px;
+
+  filter:blur(60px);
+}
+
+.cta-inner{
   position:relative;
   z-index:1;
+  text-align:center;
+  max-width:800px;
+  margin:0 auto;
 }
 
-.final-cta .eyebrow{
-  color:#F17A8A;
-}
-
-.final-cta h2{
+.cta-inner h2{
   font-family:"Manrope",sans-serif;
-
-  font-size:clamp(45px,7vw,82px);
-
-  line-height:.95;
-  letter-spacing:-5px;
-
-  margin-bottom:25px;
-}
-
-.final-cta p{
-  max-width:650px;
-  margin:auto;
-
-  color:#98A2B3;
-
-  font-size:16px;
-}
-
-.final-price{
-  margin:30px 0 25px;
-
-  font-family:"Manrope",sans-serif;
-
-  font-size:64px;
+  font-size:clamp(36px,5vw,56px);
+  line-height:1.1;
+  letter-spacing:-2px;
+  margin-bottom:24px;
   font-weight:800;
-  letter-spacing:-4px;
 }
 
-.phone{
-  display:block;
-
-  margin-top:22px;
-
+.cta-inner p{
+  font-size:17px;
   color:#D0D5DD;
-
-  font-size:14px;
-  font-weight:700;
+  margin-bottom:40px;
+  line-height:1.7;
 }
 
 /* =========================
@@ -1778,2945 +1169,597 @@ nav{
 ========================= */
 
 footer{
-  background:#030914;
-  color:white;
-
-  padding:65px 0 95px;
-}
-
-.footer-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:start;
-  gap:50px;
-
-  padding-bottom:45px;
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.footer-brand p{
-  color:#667085;
-  font-size:12px;
-  margin-top:9px;
-}
-
-.footer-links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:18px;
-
-  font-size:11px;
+  background:var(--ink);
   color:#98A2B3;
+
+  padding:60px 0 30px;
+  border-top:1px solid rgba(255,255,255,.1);
 }
 
-.footer-links a:hover{
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+  margin-bottom:50px;
+}
+
+.footer-column h4{
+  color:white;
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:16px;
+  letter-spacing:.3px;
+}
+
+.footer-column ul{
+  list-style:none;
+}
+
+.footer-column li{
+  margin-bottom:12px;
+  font-size:12px;
+}
+
+.footer-column a{
+  color:#98A2B3;
+  transition:.2s ease;
+}
+
+.footer-column a:hover{
   color:white;
 }
 
 .footer-bottom{
-  padding-top:28px;
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-top:30px;
 
   display:flex;
   justify-content:space-between;
-  gap:30px;
-
-  color:#667085;
-
-  font-size:10px;
-  line-height:1.7;
+  align-items:center;
 }
 
 .footer-bottom p{
-  max-width:800px;
+  font-size:12px;
 }
 
 /* =========================
-   FLOATING WHATSAPP
+   MOBILE RESPONSIVE
 ========================= */
 
-.whatsapp{
-  position:fixed;
+@media (max-width: 1024px){
 
-  right:22px;
-  bottom:22px;
-
-  width:56px;
-  height:56px;
-
-  border-radius:50%;
-
-  background:#25D366;
-  color:white;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  font-size:23px;
-
-  z-index:2000;
-
-  box-shadow:0 12px 35px rgba(0,0,0,.2);
-
-  transition:.2s ease;
-}
-
-.whatsapp:hover{
-  transform:translateY(-3px) scale(1.03);
-}
-
-/* =========================
-   MOBILE CTA
-========================= */
-
-.mobile-cta{
-  display:none;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:1000px){
-
-  .hero-grid{
-    grid-template-columns:1fr;
-    gap:55px;
-  }
-
-  .hero-card{
-    max-width:650px;
-  }
-
+  .hero-grid,
   .problem-grid{
     grid-template-columns:1fr;
-    gap:50px;
+    gap:40px;
   }
 
   .problem-intro{
     position:static;
   }
 
-  .skill-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .criteria-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .format-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .pricing-content{
+  .problem-list{
     grid-template-columns:1fr;
-    gap:35px;
+  }
+
+  .approach-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .faq-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
 }
 
-@media(max-width:800px){
+@media (max-width: 768px){
 
-  .nav-links{
+  .section{
+    padding:80px 0;
+  }
+
+  .nav-links,
+  .announcement{
     display:none;
-
-    position:absolute;
-
-    top:82px;
-    left:0;
-    right:0;
-
-    background:var(--paper);
-
-    padding:22px;
-
-    flex-direction:column;
-    align-items:stretch;
-
-    border-bottom:1px solid var(--line);
-
-    box-shadow:var(--shadow-sm);
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    padding:7px 0;
   }
 
   .menu-btn{
     display:block;
   }
 
-  .trust-inner{
-    flex-wrap:wrap;
-    padding:22px 0;
+  .hero::after{
+    font-size:160px;
   }
 
   .approach-grid{
     grid-template-columns:1fr;
   }
 
-  .band-header{
-    display:block;
+  .trust-inner{
+    flex-direction:column;
+    text-align:center;
   }
 
+  .band-header,
   .band-content{
-    align-items:start;
     flex-direction:column;
+    align-items:start;
+    gap:20px;
+  }
+
+  .band-content h3{
+    font-size:32px;
   }
 
   .band-score{
-    display:none;
+    font-size:56px;
   }
 
-  .calc-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .mistakes-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .audience-grid{
+  .footer-grid{
     grid-template-columns:1fr;
-  }
-
-  .honest-grid{
-    grid-template-columns:1fr;
-  }
-
-  .price-list{
-    grid-template-columns:1fr;
-  }
-
-  .footer-top{
-    flex-direction:column;
   }
 
   .footer-bottom{
     flex-direction:column;
-  }
-
-}
-
-@media(max-width:600px){
-
-  .container{
-    width:min(var(--container),calc(100% - 32px));
-  }
-
-  .section{
-    padding:80px 0;
-  }
-
-  .announcement{
-    height:auto;
-    min-height:38px;
-    padding:8px 0;
-  }
-
-  .announcement-inner{
-    font-size:9px;
+    gap:20px;
     text-align:center;
-  }
-
-  .announcement-inner .announcement-dot,
-  .announcement-inner span:first-child{
-    display:none;
-  }
-
-  .nav-inner{
-    height:70px;
-  }
-
-  .nav-links{
-    top:70px;
-  }
-
-  .hero{
-    padding:75px 0 85px;
-  }
-
-  .hero h1{
-    font-size:50px;
-    letter-spacing:-3.5px;
-  }
-
-  .hero-description{
-    font-size:16px;
-  }
-
-  .hero-card{
-    padding:22px;
-    border-radius:20px;
-  }
-
-  .score-big{
-    font-size:58px;
-  }
-
-  .hero-card-bottom{
-    display:block;
-  }
-
-  .hero-card-bottom strong{
-    display:block;
-    margin-top:5px;
-  }
-
-  .trust-inner{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-  }
-
-  .problem-list{
-    grid-template-columns:1fr;
-  }
-
-  .problem-card{
-    min-height:auto;
-  }
-
-  .skill-grid,
-  .format-grid,
-  .criteria-grid{
-    grid-template-columns:1fr;
-  }
-
-  .skill-card{
-    min-height:250px;
-  }
-
-  .module-button{
-    grid-template-columns:50px 1fr 30px;
-    gap:10px;
-  }
-
-  .module-title{
-    font-size:13px;
-  }
-
-  .module-content{
-    padding:0 20px 25px 60px;
-    font-size:13px;
-  }
-
-  .band-box{
-    padding:22px;
-  }
-
-  .band-content h3{
-    font-size:30px;
-  }
-
-  .band-buttons{
-    overflow-x:auto;
-  }
-
-  .calculator{
-    padding:25px;
-  }
-
-  .calc-grid{
-    grid-template-columns:1fr;
-  }
-
-  .mistakes-grid{
-    grid-template-columns:1fr;
-  }
-
-  .pricing-card{
-    padding:30px 23px;
-    border-radius:20px;
-  }
-
-  .pricing-card h2{
-    font-size:35px;
-  }
-
-  .price{
-    font-size:55px;
-  }
-
-  .final-cta{
-    padding:90px 18px;
-  }
-
-  .final-cta h2{
-    font-size:47px;
-    letter-spacing:-3px;
-  }
-
-  .final-price{
-    font-size:55px;
-  }
-
-  .whatsapp{
-    right:16px;
-    bottom:72px;
-  }
-
-  .mobile-cta{
-    display:block;
-
-    position:fixed;
-
-    left:0;
-    right:0;
-    bottom:0;
-
-    z-index:1500;
-
-    padding:9px;
-
-    background:white;
-
-    border-top:1px solid var(--line);
-  }
-
-  .mobile-cta a{
-    display:block;
-
-    background:var(--red);
-    color:white;
-
-    text-align:center;
-
-    padding:13px;
-
-    border-radius:9px;
-
-    font-size:12px;
-    font-weight:800;
-  }
-
-}
-
-@media(prefers-reduced-motion:reduce){
-
-  *,
-  *::before,
-  *::after{
-    scroll-behavior:auto!important;
-    transition:none!important;
-    animation:none!important;
   }
 
 }
 
 </style>
+
 </head>
-
-
 <body>
 
-<!-- =========================
-     ANNOUNCEMENT
-========================= -->
-
-<div class="announcement">
-
-  <div class="container announcement-inner">
-
-    <strong>IELTS MASTER</strong>
-
-    <span class="announcement-dot"></span>
-
-    <span>3-HOUR INTENSIVE • ONLINE • Rs. 500</span>
-
-    <span class="announcement-dot"></span>
-
-    <a href="https://wa.me/9779707450833?text=Hi%2C%20I%E2%80%99m%20interested%20in%20the%20IELTS%20Master%20Course%20for%20Rs.%20500.%20Please%20send%20me%20the%20enrollment%20details." target="_blank" rel="noopener">
-      ENROLL VIA WHATSAPP →
-    </a>
-
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement">
+    <div class="announcement-inner">
+      <div class="announcement-dot"></div>
+      <span>Join our live masterclass for IELTS preparation — <a href="#signup">Limited seats available!</a></span>
+    </div>
   </div>
 
-</div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <div class="logo">IELTS<span>.</span></div>
 
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
 
-<!-- =========================
-     NAVIGATION
-========================= -->
-
-<nav>
-
-  <div class="container nav-inner">
-
-    <a href="#" class="logo">
-      IELTS <span>MASTER</span>
-    </a>
-
-    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
-      ☰
-    </button>
-
-    <div class="nav-links" id="navLinks">
-
-      <a href="#course">Course</a>
-      <a href="#curriculum">Curriculum</a>
-      <a href="#skills">4 Skills</a>
-      <a href="#scoring">Scoring</a>
-      <a href="#faq">FAQ</a>
-
-      <a
-        class="nav-cta"
-        href="https://wa.me/9779707450833?text=Hi%2C%20I%E2%80%99m%20interested%20in%20joining%20the%20IELTS%20Master%20Course%20for%20Rs.%20500.%20Please%20send%20me%20the%20enrollment%20details."
-        target="_blank"
-        rel="noopener"
-      >
-        JOIN — Rs. 500
-      </a>
-
-    </div>
-
-  </div>
-
-</nav>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<header class="hero">
-
-  <div class="container hero-grid">
-
-    <div>
-
-      <span class="eyebrow">
-        ONLINE IELTS PREPARATION IN NEPAL
-      </span>
-
-      <h1>
-        Don't Just Take IELTS.
-        <span class="red">Understand It.</span>
-      </h1>
-
-      <p class="hero-description">
-        A focused 3-hour IELTS masterclass for students who already
-        have English knowledge but want to understand the test,
-        scoring criteria, examiner expectations and practical
-        strategies that can make preparation more effective.
-      </p>
-
-      <div class="hero-pills">
-
-        <span class="hero-pill">1 DAY</span>
-        <span class="hero-pill">3 HOURS</span>
-        <span class="hero-pill">4 SKILLS</span>
-        <span class="hero-pill">SCORING</span>
-        <span class="hero-pill price">Rs. 500</span>
-
+        <a href="#signup" class="nav-cta">Sign Up Now</a>
+        <button class="menu-btn">☰</button>
       </div>
-
-      <div class="buttons">
-
-        <a
-          class="btn btn-primary"
-          href="https://wa.me/9779707450833?text=Hi%2C%20I%E2%80%99m%20interested%20in%20joining%20the%20IELTS%20Master%20Course%20for%20Rs.%20500.%20Please%20send%20me%20the%20enrollment%20details."
-          target="_blank"
-          rel="noopener"
-        >
-          JOIN THE MASTER COURSE →
-        </a>
-
-        <a class="btn btn-light" href="#course">
-          EXPLORE COURSE
-        </a>
-
-      </div>
-
-      <p class="hero-note">
-        Enrollment is handled directly through WhatsApp • +977 9707450833
-      </p>
-
     </div>
+  </nav>
 
-
-    <!-- HERO SCORE CARD -->
-
-    <div class="hero-card">
-
-      <div class="hero-card-top">
-
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
         <div>
+          <h1>Master <span class="red">IELTS</span> in 3 Hours</h1>
+          <p class="hero-description">
+            Join our focused online masterclass designed for students in Nepal. Covering all four skills, scoring criteria, practical strategies, and real exam patterns.
+          </p>
 
-          <div class="hero-card-label">
-            PERFORMANCE FRAMEWORK
+          <div class="hero-pills">
+            <span class="hero-pill">✓ All 4 Skills</span>
+            <span class="hero-pill">✓ Expert Strategies</span>
+            <span class="hero-pill price">Rs. 500 Only</span>
           </div>
 
-          <div class="hero-card-title">
-            IELTS Score View
+          <div class="buttons">
+            <a href="#signup" class="btn btn-primary">Enroll Now</a>
+            <a href="#approach" class="btn btn-light">Learn More</a>
           </div>
 
+          <p class="hero-note">⏱️ Next batch starts on August 30th. Secure your spot today!</p>
         </div>
 
-        <div class="live-badge">
-          MASTERCLASS
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <div>
+              <p class="hero-card-label">IELTS Score Report</p>
+              <h3 class="hero-card-title">John Doe</h3>
+            </div>
+            <span class="live-badge">LIVE</span>
+          </div>
+
+          <div class="score-overview">
+            <div>
+              <small>Overall Band</small>
+              <div class="score-big">7.5</div>
+            </div>
+            <div class="score-target">
+              <strong>Target: 8.0</strong>
+              <span>Achieved 94% Target</span>
+            </div>
+          </div>
+
+          <div class="skill-bars">
+            <div class="skill-row">
+              <label>Listening</label>
+              <div class="bar"><span style="width: 88%;"></span></div>
+              <strong>8.5</strong>
+            </div>
+            <div class="skill-row">
+              <label>Reading</label>
+              <div class="bar"><span style="width: 75%;"></span></div>
+              <strong>7.5</strong>
+            </div>
+            <div class="skill-row">
+              <label>Writing</label>
+              <div class="bar"><span style="width: 72%;"></span></div>
+              <strong>7.0</strong>
+            </div>
+            <div class="skill-row">
+              <label>Speaking</label>
+              <div class="bar"><span style="width: 80%;"></span></div>
+              <strong>7.5</strong>
+            </div>
+          </div>
+
+          <div class="hero-card-bottom">
+            <span>Preparation Duration</span>
+            <strong>3 months</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <span class="trust-number">500+</span>
+          <span>Students Prepared</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number">95%</span>
+          <span>Success Rate</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number">8.2</span>
+          <span>Avg. Band Score</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-number">4.9★</span>
+          <span>Student Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM SECTION -->
+  <section class="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-intro">
+          <div class="eyebrow">Common Challenges</div>
+          <h2 class="section-title">Why Most IELTS Aspirants Struggle</h2>
+          <p class="section-subtitle">These challenges are common among students preparing for IELTS in Nepal.</p>
         </div>
 
+        <div class="problem-list">
+          <div class="problem-card">
+            <div class="problem-number">01</div>
+            <h3>Lack of Structured Learning</h3>
+            <p>No clear roadmap causes confusion about what to focus on first, leading to wasted effort.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-number">02</div>
+            <h3>Time Management Issues</h3>
+            <p>Students often spend too much time on weak areas and neglect their strengths.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-number">03</div>
+            <h3>Pronunciation Anxiety</h3>
+            <p>Speaking module creates the most fear due to lack of native speaker exposure.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-number">04</div>
+            <h3>Exam Pattern Unfamiliarity</h3>
+            <p>Not understanding exam patterns and time limits leads to poor performance on test day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH SECTION -->
+  <section class="dark-section section" id="approach">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow" style="justify-content: center;">Our Method</div>
+        <h2 class="section-title">Our 3-Hour Masterclass Structure</h2>
+        <p class="section-subtitle">A focused approach designed to maximize learning in minimal time.</p>
       </div>
 
+      <div class="approach-grid">
+        <div class="approach-card">
+          <div class="approach-number">HOUR 1 — FOUNDATION</div>
+          <h3>Core Concepts & Scoring</h3>
+          <p>We break down the IELTS scoring criteria for each module, showing you exactly what examiners look for.</p>
+        </div>
 
-      <div class="score-overview">
+        <div class="approach-card">
+          <div class="approach-number">HOUR 2 — STRATEGY</div>
+          <h3>Practical Techniques</h3>
+          <p>Learn time-saving strategies, common mistakes to avoid, and how to approach each question type.</p>
+        </div>
 
+        <div class="approach-card">
+          <div class="approach-number">HOUR 3 — PRACTICE</div>
+          <h3>Live Q&A & Mock Test</h3>
+          <p>Participate in a short mock test and get personalized feedback from our expert instructors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND PROGRESSION -->
+  <section class="band-section section">
+    <div class="container">
+      <div class="band-header">
         <div>
-
-          <small>CURRENT EXAMPLE</small>
-
-          <div class="score-big">6.5</div>
-
+          <div class="eyebrow">Score Progression</div>
+          <h2 class="section-title">Your Band Score Journey</h2>
+          <p class="section-subtitle">See how students progress after attending our masterclass.</p>
         </div>
-
-        <div class="score-target">
-
-          <strong>Target → Higher</strong>
-          <span>Understand what changes</span>
-
-        </div>
-
       </div>
 
+      <div class="band-box">
+        <div class="band-buttons">
+          <button class="band-btn active" onclick="showBand('band5')">5.5</button>
+          <button class="band-btn" onclick="showBand('band6')">6.5</button>
+          <button class="band-btn" onclick="showBand('band7')">7.5</button>
+          <button class="band-btn" onclick="showBand('band8')">8.0</button>
+        </div>
 
-      <div class="skill-bars">
-
-        <div class="skill-row">
-
-          <label>Listening</label>
-
-          <div class="bar">
-            <span style="width:78%"></span>
+        <div id="band5" class="band-content" style="display: flex;">
+          <div>
+            <h3>Band 5.5 Score</h3>
+            <p>Limited vocabulary, frequent grammatical errors, basic sentence structures. Score improvement potential: 1-2 bands in 3 months with consistent effort.</p>
           </div>
-
-          <strong>7.0</strong>
-
+          <div class="band-score">5.5</div>
         </div>
 
-
-        <div class="skill-row">
-
-          <label>Reading</label>
-
-          <div class="bar">
-            <span style="width:72%"></span>
+        <div id="band6" class="band-content">
+          <div>
+            <h3>Band 6.0 Score</h3>
+            <p>Adequate vocabulary for general topics, mostly correct grammar with occasional errors. Can communicate clearly but lacks fluency. Score improvement potential: 1.5 bands in 2-3 months.</p>
           </div>
-
-          <strong>6.5</strong>
-
+          <div class="band-score">6.0</div>
         </div>
 
-
-        <div class="skill-row">
-
-          <label>Writing</label>
-
-          <div class="bar">
-            <span style="width:67%"></span>
+        <div id="band7" class="band-content">
+          <div>
+            <h3>Band 7.5 Score</h3>
+            <p>Broad vocabulary range, accurate grammar usage, coherent and well-organized responses. Can discuss complex topics with ease. Score improvement potential: 0.5-1 band in 1-2 months.</p>
           </div>
-
-          <strong>6.0</strong>
-
+          <div class="band-score">7.5</div>
         </div>
 
-
-        <div class="skill-row">
-
-          <label>Speaking</label>
-
-          <div class="bar">
-            <span style="width:72%"></span>
+        <div id="band8" class="band-content">
+          <div>
+            <h3>Band 8.0+ Score</h3>
+            <p>Excellent command of English, sophisticated vocabulary, near-native fluency. Can discuss specialized topics with precision and elegance.</p>
           </div>
+          <div class="band-score">8.0</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <strong>6.5</strong>
+  <!-- CURRICULUM SECTION -->
+  <section class="curriculum section" id="curriculum">
+    <div class="container">
+      <div class="eyebrow">What You'll Learn</div>
+      <h2 class="section-title">Complete IELTS Curriculum</h2>
+      <p class="section-subtitle">Our 3-hour masterclass covers everything you need to ace the IELTS exam.</p>
 
+      <div class="accordion">
+        <div class="module active">
+          <button class="module-button" onclick="toggleModule(this)">
+            <span class="module-number">01</span>
+            <span class="module-title">Listening Module Strategy</span>
+            <div class="module-icon">+</div>
+          </button>
+          <div class="module-content">
+            <p><strong>In this section, you'll master:</strong></p>
+            <p>• Section-wise breakdown (Conversations & Academic Lectures)<br>
+            • Key strategies for note-taking and predicting answers<br>
+            • Common spelling mistakes and how to avoid them<br>
+            • Practice with actual exam audio patterns<br>
+            • Time management within the listening window</p>
+          </div>
         </div>
 
-      </div>
-
-
-      <div class="hero-card-bottom">
-
-        <span>
-          4 SKILLS • SCORING • STRATEGY
-        </span>
-
-        <strong>
-          BAND 5 → 8 FRAMEWORK
-        </strong>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</header>
-
-
-<!-- =========================
-     TRUST STRIP
-========================= -->
-
-<div class="trust">
-
-  <div class="container trust-inner">
-
-    <div class="trust-item">
-      <span class="trust-number">01</span>
-      Focused 3-hour session
-    </div>
-
-    <div class="trust-item">
-      <span class="trust-number">04</span>
-      IELTS skills covered
-    </div>
-
-    <div class="trust-item">
-      <span class="trust-number">08</span>
-      Core curriculum modules
-    </div>
-
-    <div class="trust-item">
-      <span class="trust-number">500</span>
-      NPR one session
-    </div>
-
-  </div>
-
-</div>
-
-
-<!-- =========================
-     COURSE INTRO / SEO
-========================= -->
-
-<section class="section problem" id="course">
-
-  <div class="container problem-grid">
-
-    <div class="problem-intro">
-
-      <span class="eyebrow">
-        IELTS PREPARATION IN NEPAL
-      </span>
-
-      <h2 class="section-title">
-        A Better Way To Prepare For IELTS.
-      </h2>
-
-      <p class="section-subtitle">
-        English ability matters. But IELTS also requires you to
-        understand the examination itself.
-      </p>
-
-    </div>
-
-
-    <div>
-
-      <div class="problem-list">
-
-        <div class="problem-card">
-
-          <div class="problem-number">01 — STRATEGY</div>
-
-          <h3>
-            Knowing English Isn't The Same As Knowing IELTS.
-          </h3>
-
-          <p>
-            Learn how question types, timing and task requirements
-            affect the way you should approach the test.
-          </p>
-
+        <div class="module">
+          <button class="module-button" onclick="toggleModule(this)">
+            <span class="module-number">02</span>
+            <span class="module-title">Reading Module Techniques</span>
+            <div class="module-icon">+</div>
+          </button>
+          <div class="module-content">
+            <p><strong>In this section, you'll master:</strong></p>
+            <p>• Question type strategies (MCQ, T/F/NG, Fill in the blanks, Matching)<br>
+            • Skimming and scanning techniques for speed reading<br>
+            • Vocabulary building for academic texts<br>
+            • Common distractors in answer options<br>
+            • Timing strategy to complete 40 questions in 60 minutes</p>
+          </div>
         </div>
 
-
-        <div class="problem-card">
-
-          <div class="problem-number">02 — SCORING</div>
-
-          <h3>
-            Understand What Examiners Assess.
-          </h3>
-
-          <p>
-            Break down the criteria behind Writing and Speaking
-            instead of relying on random preparation advice.
-          </p>
-
+        <div class="module">
+          <button class="module-button" onclick="toggleModule(this)">
+            <span class="module-number">03</span>
+            <span class="module-title">Writing Band 8 Strategy</span>
+            <div class="module-icon">+</div>
+          </button>
+          <div class="module-content">
+            <p><strong>In this section, you'll master:</strong></p>
+            <p>• Task 1 structures (Processes, Comparisons, Charts & Graphs)<br>
+            • Task 2 essay frameworks (Agree/Disagree, Discussion, Solutions)<br>
+            • Vocabulary range and synonyms to avoid repetition<br>
+            • Grammar structures that impress examiners<br>
+            • Common writing mistakes and how band scores are calculated</p>
+          </div>
         </div>
 
-
-        <div class="problem-card">
-
-          <div class="problem-number">03 — TIME</div>
-
-          <h3>
-            Better Answers Still Need Better Time Management.
-          </h3>
-
-          <p>
-            Learn practical ways to approach sections efficiently
-            and avoid losing marks through poor time control.
-          </p>
-
+        <div class="module">
+          <button class="module-button" onclick="toggleModule(this)">
+            <span class="module-number">04</span>
+            <span class="module-title">Speaking Fluency & Confidence</span>
+            <div class="module-icon">+</div>
+          </button>
+          <div class="module-content">
+            <p><strong>In this section, you'll master:</strong></p>
+            <p>• Part 1, 2, and 3 strategy for each speaking section<br>
+            • Pronunciation tips for common problem sounds<br>
+            • Building fluency through advanced linking techniques<br>
+            • Handling unexpected questions in Part 3<br>
+            • Mock speaking practice with feedback</p>
+          </div>
         </div>
-
-
-        <div class="problem-card">
-
-          <div class="problem-number">04 — MISTAKES</div>
-
-          <h3>
-            Identify Score-Losing Habits.
-          </h3>
-
-          <p>
-            Understand common mistakes in Listening, Reading,
-            Writing and Speaking before test day.
-          </p>
-
-        </div>
-
-
-        <div class="problem-card">
-
-          <div class="problem-number">05 — PERFORMANCE</div>
-
-          <h3>
-            Understand What Stronger Performance Looks Like.
-          </h3>
-
-          <p>
-            Explore how performance characteristics change
-            across different IELTS band levels.
-          </p>
-
-        </div>
-
-
-        <div class="problem-card">
-
-          <div class="problem-number">06 — CLARITY</div>
-
-          <h3>
-            Replace Confusion With A Clear Plan.
-          </h3>
-
-          <p>
-            Leave with a structured understanding of what to
-            focus on during your final preparation.
-          </p>
-
-        </div>
-
       </div>
-
-      <div class="seo-content" style="margin-top:28px;">
-
-        <p style="color:#667085;font-size:14px;">
-          IELTS MASTER is an online IELTS preparation course in Nepal
-          designed for students who want a focused understanding of
-          the IELTS examination. The 3-hour masterclass covers
-          Listening, Reading, Writing and Speaking together with
-          scoring criteria, question strategies, common mistakes,
-          time management and test-day preparation.
-        </p>
-
-      </div>
-
     </div>
+  </section>
 
-  </div>
+  <!-- FAQ SECTION -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="eyebrow">Common Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
 
-</section>
+      <div class="faq-grid">
+        <details class="faq-item">
+          <summary>Is this masterclass suitable for beginners?</summary>
+          <p>Yes! Our masterclass is designed for all levels. Whether you're just starting or already have a Band 6+, you'll learn something valuable. The techniques work regardless of your current level.</p>
+        </details>
 
+        <details class="faq-item">
+          <summary>Will I get a certificate after the masterclass?</summary>
+          <p>This is a 3-hour masterclass, not an accredited course, so no official certificate. However, you'll receive a detailed performance report and personalized study plan based on your mock test results.</p>
+        </details>
 
-<!-- =========================
-     APPROACH
-========================= -->
+        <details class="faq-item">
+          <summary>How many students can attend each batch?</summary>
+          <p>We keep batch sizes small (20-30 students max) to ensure personalized attention. This allows us to answer individual questions and provide quality feedback.</p>
+        </details>
 
-<section class="section dark-section">
+        <details class="faq-item">
+          <summary>Can I attend if I have zero English background?</summary>
+          <p>This masterclass is designed for intermediate level and above. If you're a complete beginner, we recommend building basic English fundamentals first through our starter courses.</p>
+        </details>
 
-  <div class="container">
+        <details class="faq-item">
+          <summary>Is there a refund policy if I'm not satisfied?</summary>
+          <p>Yes! We offer a 7-day refund policy if you're not satisfied with the masterclass quality. No questions asked — just reach out to our support team.</p>
+        </details>
 
-    <span class="eyebrow">
-      THE IELTS MASTER APPROACH
-    </span>
-
-    <h2 class="section-title">
-      You Don't Need To<br>
-      Start From Zero.
-    </h2>
-
-    <p class="section-subtitle">
-      If you already have basic or intermediate English,
-      the focus is learning how to apply your existing ability
-      specifically to IELTS.
-    </p>
-
-
-    <div class="approach-grid">
-
-      <div class="approach-card">
-
-        <div class="approach-number">01 / KNOW THE TEST</div>
-
-        <h3>
-          Understand The Structure
-        </h3>
-
-        <p>
-          Learn the four components, question types,
-          timing and overall test structure.
-        </p>
-
+        <details class="faq-item">
+          <summary>Can I ask the instructor questions after the masterclass?</summary>
+          <p>Absolutely! You'll get access to our Telegram community where you can ask follow-up questions and get guidance from our instructors for 30 days after the masterclass.</p>
+        </details>
       </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">02 / KNOW THE SCORE</div>
-
-        <h3>
-          Understand The Criteria
-        </h3>
-
-        <p>
-          Discover what the IELTS assessment criteria
-          actually measure.
-        </p>
-
-      </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">03 / KNOW THE STRATEGY</div>
-
-        <h3>
-          Approach Questions Better
-        </h3>
-
-        <p>
-          Learn practical techniques for approaching
-          different question types.
-        </p>
-
-      </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">04 / RECOGNISE LOSSES</div>
-
-        <h3>
-          Avoid Common Mistakes
-        </h3>
-
-        <p>
-          Identify habits and errors that can reduce
-          performance.
-        </p>
-
-      </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">05 / IMPROVE</div>
-
-        <h3>
-          Make Preparation Deliberate
-        </h3>
-
-        <p>
-          Replace random tips with a structured preparation
-          approach.
-        </p>
-
-      </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">06 / TARGET</div>
-
-        <h3>
-          Understand Higher Bands
-        </h3>
-
-        <p>
-          See how stronger performance differs from
-          lower-band performance.
-        </p>
-
-      </div>
-
     </div>
+  </section>
 
-  </div>
-
-</section>
-
-
-<!-- =========================
-     BAND PROGRESSION
-========================= -->
-
-<section class="section band-section" id="scoring">
-
-  <div class="container">
-
-    <div class="band-header">
-
-      <div>
-
-        <span class="eyebrow">
-          BAND PROGRESSION
-        </span>
-
-        <h2 class="section-title">
-          What Changes From<br>
-          Band 5 To Band 8?
-        </h2>
-
+  <!-- CTA SECTION -->
+  <section class="cta-section section" id="signup">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ready to Master IELTS?</h2>
+        <p>Join our 3-hour masterclass and unlock the strategies that successful students use. Limited seats available for our next batch.</p>
+        <a href="#" class="btn btn-primary" style="margin-top: 20px;">Enroll Now — Rs. 500</a>
       </div>
-
-      <p class="section-subtitle">
-        Explore how performance characteristics can change
-        across different IELTS band levels.
-      </p>
-
     </div>
+  </section>
 
-
-    <div class="band-box">
-
-      <div class="band-buttons">
-
-        <button class="band-btn active" data-band="5">5</button>
-        <button class="band-btn" data-band="6">6</button>
-        <button class="band-btn" data-band="7">7</button>
-        <button class="band-btn" data-band="8">8</button>
-
-      </div>
-
-
-      <div class="band-content">
-
-        <div>
-
-          <h3 id="bandTitle">
-            BAND 5
-          </h3>
-
-          <p id="bandDescription">
-            Basic organisation, task response may be limited,
-            noticeable errors and limited vocabulary.
-          </p>
-
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>IELTS MASTER</h4>
+          <p style="font-size: 12px; margin-bottom: 12px;">Your trusted partner in IELTS preparation in Nepal.</p>
         </div>
 
-        <div class="band-score" id="bandScore">
-          05
-        </div>
-
-      </div>
-
-    </div>
-
-    <p style="margin-top:15px;color:#667085;font-size:11px;">
-      Band descriptions shown here are simplified educational explanations.
-      Individual IELTS scores depend on actual test performance and official assessment.
-    </p>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CURRICULUM
-========================= -->
-
-<section class="section curriculum" id="curriculum">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      THE COMPLETE CURRICULUM
-    </span>
-
-    <h2 class="section-title">
-      Three Hours.<br>
-      Eight Focused Modules.
-    </h2>
-
-    <p class="section-subtitle">
-      A concentrated masterclass covering the major areas you need
-      to understand before your IELTS examination.
-    </p>
-
-
-    <div class="accordion">
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">01</span>
-
-          <span class="module-title">
-            IELTS MASTER PLAN
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          IELTS structure, Academic vs General Training,
-          four components, timing, question types, band scale,
-          overall score and how scoring works.
-        </div>
-
-      </div>
-
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">02</span>
-
-          <span class="module-title">
-            LISTENING MASTERCLASS
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          Four sections, predicting answers, keywords,
-          paraphrasing, distractors, multiple choice,
-          matching, maps, form completion, sentence completion,
-          spelling, numbers, names, missed answers and time strategy.
-        </div>
-
-      </div>
-
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">03</span>
-
-          <span class="module-title">
-            READING MASTERCLASS
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          Skimming, scanning, keywords, paraphrasing,
-          True/False/Not Given, Yes/No/Not Given,
-          matching headings, matching information,
-          multiple choice, sentence completion and time management.
-        </div>
-
-      </div>
-
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">04</span>
-
-          <span class="module-title">
-            WRITING MASTERCLASS
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          Task 1, Task 2, question analysis, planning,
-          structure, introduction, overview, position,
-          body paragraphs, examples, coherence, vocabulary,
-          grammar, paragraphing, common mistakes and examiner criteria.
-        </div>
-
-      </div>
-
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">05</span>
-
-          <span class="module-title">
-            SPEAKING MASTERCLASS
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          Part 1, Part 2, Part 3, fluency, vocabulary,
-          grammar, pronunciation, answer development,
-          extending answers, natural speaking and difficult questions.
-        </div>
-
-      </div>
-
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">06</span>
-
-          <span class="module-title">
-            SCORING MASTERCLASS
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          Band 5, Band 6, Band 7, Band 8, Band 9,
-          overall band, Listening score, Reading score,
-          Writing criteria and Speaking criteria.
-        </div>
-
-      </div>
-
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">07</span>
-
-          <span class="module-title">
-            EXAMINER'S EYE
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          Understand what examiners assess, why answers
-          receive different scores, what reduces scores
-          and what higher-band performance demonstrates.
-        </div>
-
-      </div>
-
-
-      <div class="module">
-
-        <button class="module-button">
-
-          <span class="module-number">08</span>
-
-          <span class="module-title">
-            TEST-DAY BLUEPRINT
-          </span>
-
-          <span class="module-icon">+</span>
-
-        </button>
-
-        <div class="module-content">
-          Night-before preparation, morning preparation,
-          arrival, time management, staying calm,
-          handling mistakes and final checklist.
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FOUR SKILLS
-========================= -->
-
-<section class="section skills-section" id="skills">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      FOUR SKILLS
-    </span>
-
-    <h2 class="section-title">
-      One System.<br>
-      Four IELTS Skills.
-    </h2>
-
-
-    <div class="skill-grid">
-
-      <div class="skill-card">
-
-        <div class="skill-number">01</div>
-
-        <h3>LISTENING</h3>
-
-        <p>
-          Prediction, keywords, paraphrasing, distractors,
-          question types, spelling and time strategy.
-        </p>
-
-      </div>
-
-
-      <div class="skill-card">
-
-        <div class="skill-number">02</div>
-
-        <h3>READING</h3>
-
-        <p>
-          Skimming, scanning, matching headings,
-          question strategies and time management.
-        </p>
-
-      </div>
-
-
-      <div class="skill-card">
-
-        <div class="skill-number">03</div>
-
-        <h3>WRITING</h3>
-
-        <p>
-          Task response, structure, coherence, vocabulary,
-          grammar, planning and examiner criteria.
-        </p>
-
-      </div>
-
-
-      <div class="skill-card">
-
-        <div class="skill-number">04</div>
-
-        <h3>SPEAKING</h3>
-
-        <p>
-          Fluency, vocabulary, grammar, pronunciation,
-          answer development and natural communication.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FORMAT
-========================= -->
-
-<section class="section format-section" id="format">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      UNDERSTAND THE EXAM
-    </span>
-
-    <h2 class="section-title">
-      Know The IELTS<br>
-      Before You Take It.
-    </h2>
-
-
-    <div class="format-grid">
-
-      <div class="format-card">
-
-        <span>01 / LISTENING</span>
-
-        <h3>
-          Listening
-        </h3>
-
-        <p>
-          Listening is part of both IELTS Academic
-          and IELTS General Training.
-        </p>
-
-      </div>
-
-
-      <div class="format-card">
-
-        <span>02 / READING</span>
-
-        <h3>
-          Reading
-        </h3>
-
-        <p>
-          Academic and General Training Reading
-          use different content and text types.
-        </p>
-
-      </div>
-
-
-      <div class="format-card">
-
-        <span>03 / WRITING</span>
-
-        <h3>
-          Writing
-        </h3>
-
-        <p>
-          Academic and General Training Writing
-          differ, particularly in Task 1.
-        </p>
-
-      </div>
-
-
-      <div class="format-card">
-
-        <span>04 / SPEAKING</span>
-
-        <h3>
-          Speaking
-        </h3>
-
-        <p>
-          Speaking assesses spoken English through
-          an interview-style format.
-        </p>
-
-      </div>
-
-
-      <div class="format-card">
-
-        <span>05 / TIMING</span>
-
-        <h3>
-          Time Management
-        </h3>
-
-        <p>
-          Understanding component timing is essential
-          for effective preparation.
-        </p>
-
-      </div>
-
-
-      <div class="format-card">
-
-        <span>06 / QUESTION TYPES</span>
-
-        <h3>
-          Question Types
-        </h3>
-
-        <p>
-          Understanding how different question types
-          work can make preparation more structured.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CALCULATOR
-========================= -->
-
-<section class="section calculator-section">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      FREE IELTS TOOL
-    </span>
-
-    <h2 class="section-title">
-      IELTS Band Score Calculator
-    </h2>
-
-    <p class="section-subtitle">
-      Enter your four skill scores to calculate an estimated
-      overall IELTS band.
-    </p>
-
-
-    <div class="calculator">
-
-      <div class="calc-grid">
-
-        <div class="calc-input">
-
-          <label>LISTENING</label>
-
-          <input
-            id="listening"
-            type="number"
-            min="0"
-            max="9"
-            step="0.5"
-            placeholder="7.0"
-          >
-
-        </div>
-
-
-        <div class="calc-input">
-
-          <label>READING</label>
-
-          <input
-            id="reading"
-            type="number"
-            min="0"
-            max="9"
-            step="0.5"
-            placeholder="6.5"
-          >
-
-        </div>
-
-
-        <div class="calc-input">
-
-          <label>WRITING</label>
-
-          <input
-            id="writing"
-            type="number"
-            min="0"
-            max="9"
-            step="0.5"
-            placeholder="6.0"
-          >
-
-        </div>
-
-
-        <div class="calc-input">
-
-          <label>SPEAKING</label>
-
-          <input
-            id="speaking"
-            type="number"
-            min="0"
-            max="9"
-            step="0.5"
-            placeholder="6.5"
-          >
-
-        </div>
-
-      </div>
-
-
-      <div class="calc-action">
-
-        <button
-          class="btn btn-primary"
-          id="calculateBand"
-        >
-          CALCULATE OVERALL BAND →
-        </button>
-
-      </div>
-
-
-      <div class="calc-result" id="calculatorResult">
-        Enter your four scores to calculate your estimated overall band.
-      </div>
-
-    </div>
-
-    <p class="calculator-note">
-      Educational guidance only. Official IELTS results are determined by IELTS.
-    </p>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     WRITING CRITERIA
-========================= -->
-
-<section class="section">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      WRITING ASSESSMENT
-    </span>
-
-    <h2 class="section-title">
-      Understand The Four<br>
-      Writing Criteria.
-    </h2>
-
-
-    <div class="criteria-grid">
-
-      <div class="criteria-card active">
-
-        <h3>
-          Task Achievement / Response
-        </h3>
-
-        <p>
-          How effectively your response addresses
-          the task and fulfils its requirements.
-        </p>
-
-      </div>
-
-
-      <div class="criteria-card">
-
-        <h3>
-          Coherence & Cohesion
-        </h3>
-
-        <p>
-          How clearly your ideas are organised
-          and connected.
-        </p>
-
-      </div>
-
-
-      <div class="criteria-card">
-
-        <h3>
-          Lexical Resource
-        </h3>
-
-        <p>
-          The range, precision and appropriate
-          use of vocabulary.
-        </p>
-
-      </div>
-
-
-      <div class="criteria-card">
-
-        <h3>
-          Grammatical Range & Accuracy
-        </h3>
-
-        <p>
-          The variety and accuracy of grammatical
-          structures.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <div class="criteria-detail">
-
-      <strong>
-        Why this matters:
-      </strong>
-
-      IELTS Writing is assessed using four criteria.
-      Understanding these criteria helps you identify
-      what your writing actually needs rather than simply
-      adding complicated vocabulary or grammar.
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     SPEAKING CRITERIA
-========================= -->
-
-<section class="section dark-section">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      SPEAKING ASSESSMENT
-    </span>
-
-    <h2 class="section-title">
-      How IELTS Speaking<br>
-      Is Assessed.
-    </h2>
-
-
-    <div class="approach-grid">
-
-      <div class="approach-card">
-
-        <div class="approach-number">01</div>
-
-        <h3>
-          Fluency & Coherence
-        </h3>
-
-        <p>
-          Ability to speak at an appropriate length
-          and organise ideas coherently.
-        </p>
-
-      </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">02</div>
-
-        <h3>
-          Lexical Resource
-        </h3>
-
-        <p>
-          Range and appropriate use of vocabulary.
-        </p>
-
-      </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">03</div>
-
-        <h3>
-          Grammatical Range & Accuracy
-        </h3>
-
-        <p>
-          Variety and accuracy of grammatical structures.
-        </p>
-
-      </div>
-
-
-      <div class="approach-card">
-
-        <div class="approach-number">04</div>
-
-        <h3>
-          Pronunciation
-        </h3>
-
-        <p>
-          Ability to communicate clearly and be understood.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     COMMON MISTAKES
-========================= -->
-
-<section class="section mistakes-section">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      SCORE KILLER VAULT
-    </span>
-
-    <h2 class="section-title">
-      Common IELTS Mistakes.
-    </h2>
-
-
-    <div class="mistakes-grid">
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Memorised Essays</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Irrelevant Ideas</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Weak Introductions</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Missing Task 1 Overview</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Repetitive Vocabulary</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Incorrect Complex Grammar</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Overusing Linking Words</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Poor Paragraphing</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Running Out Of Reading Time</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Ignoring Spelling</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>One-Sentence Speaking Answers</h3>
-      </div>
-
-      <div class="mistake">
-        <span class="mistake-icon">×</span>
-        <h3>Panicking After One Missed Answer</h3>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     WHO IT'S FOR
-========================= -->
-
-<section class="section audience">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      WHO IT'S FOR
-    </span>
-
-    <h2 class="section-title">
-      This Masterclass Is<br>
-      For You If...
-    </h2>
-
-    <div class="audience-grid">
-
-      <div class="audience-card">
-
-        <span class="audience-check">✓</span>
-
-        <h3>
-          Your IELTS exam is approaching
-        </h3>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <span class="audience-check">✓</span>
-
-        <h3>
-          You already have basic/intermediate English
-        </h3>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <span class="audience-check">✓</span>
-
-        <h3>
-          You struggle with IELTS strategy
-        </h3>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <span class="audience-check">✓</span>
-
-        <h3>
-          You don't understand examiner scoring
-        </h3>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <span class="audience-check">✓</span>
-
-        <h3>
-          You want practical strategies
-        </h3>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <span class="audience-check">✓</span>
-
-        <h3>
-          You want a final intensive preparation session
-        </h3>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     WHAT IT IS NOT
-========================= -->
-
-<section class="section honest">
-
-  <div class="container">
-
-    <span class="eyebrow">
-      HONEST POSITIONING
-    </span>
-
-    <h2 class="section-title">
-      What IELTS MASTER<br>
-      Is Not.
-    </h2>
-
-
-    <div class="honest-grid">
-
-      <div class="honest-card">
-
-        <div class="icon">01</div>
-
-        <h3>
-          Not A Beginner English Course
-        </h3>
-
-        <p>
-          It is designed around IELTS performance,
-          not learning English from the beginning.
-        </p>
-
-      </div>
-
-
-      <div class="honest-card">
-
-        <div class="icon">02</div>
-
-        <h3>
-          Not A Full Grammar Course
-        </h3>
-
-        <p>
-          Grammar is covered in the context
-          of IELTS assessment.
-        </p>
-
-      </div>
-
-
-      <div class="honest-card">
-
-        <div class="icon">03</div>
-
-        <h3>
-          Not A Guaranteed Band 8 Program
-        </h3>
-
-        <p>
-          No course can guarantee an individual
-          IELTS score.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CHECKLIST
-========================= -->
-
-<section class="section checklist-section">
-
-  <div class="container">
-
-    <div class="center">
-
-      <span class="eyebrow">
-        FINAL PREPARATION
-      </span>
-
-      <h2 class="section-title">
-        Your IELTS Test-Day Checklist.
-      </h2>
-
-    </div>
-
-
-    <div class="checklist">
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Know the test format
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Know your target band
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Understand the scoring
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Review Writing criteria
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Review Speaking criteria
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Review Listening strategy
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Review Reading strategy
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Review Writing strategy
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Review Speaking strategy
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Prepare test-day documents
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Check your test location
-        </label>
-      </div>
-
-      <div class="check-item">
-        <label>
-          <input type="checkbox">
-          Get enough sleep
-        </label>
-      </div>
-
-
-      <button
-        class="btn btn-primary check-button"
-        id="saveChecklist"
-      >
-        SAVE CHECKLIST
-      </button>
-
-      <p id="checkMessage"></p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     PRICING
-========================= -->
-
-<section class="section pricing-section">
-
-  <div class="container">
-
-    <div class="pricing-card">
-
-      <div class="pricing-content">
-
-        <div>
-
-          <span class="eyebrow">
-            ONE MASTERCLASS
-          </span>
-
-          <h2>
-            Complete IELTS Strategy.
-          </h2>
-
-          <p class="sub">
-            One focused session designed for final IELTS preparation.
-          </p>
-
-
-          <ul class="price-list">
-
-            <li>3-hour intensive session</li>
-            <li>Complete IELTS breakdown</li>
-            <li>Listening strategy</li>
-            <li>Reading strategy</li>
-            <li>Writing strategy</li>
-            <li>Speaking strategy</li>
-            <li>Scoring system</li>
-            <li>Writing & Speaking criteria</li>
-            <li>Band 5 → 8 framework</li>
-            <li>Common mistakes</li>
-            <li>Time-management strategies</li>
-            <li>Test-day blueprint</li>
-
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
-
         </div>
 
-
-        <div>
-
-          <div class="price">
-            Rs. 500
-            <small>ONE SESSION • 3 HOURS</small>
-          </div>
-
-          <div class="pricing-action">
-
-            <a
-              class="btn btn-primary"
-              href="https://wa.me/9779707450833?text=Hi%2C%20I%E2%80%99d%20like%20to%20reserve%20my%20seat%20for%20the%20IELTS%20Master%20Course%20for%20Rs.%20500.%20Please%20send%20me%20the%20payment%20and%20course%20details."
-              target="_blank"
-              rel="noopener"
-            >
-              JOIN VIA WHATSAPP →
-            </a>
-
-          </div>
-
-          <span class="phone">
-            +977 9707450833
-          </span>
-
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
         </div>
 
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Telegram</a></li>
+          </ul>
+        </div>
       </div>
 
+      <div class="footer-bottom">
+        <p>&copy; 2024 IELTS MASTER. All rights reserved.</p>
+        <p>Crafted with ❤️ in Nepal</p>
+      </div>
     </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     REVIEWS
-========================= -->
-
-<section class="section reviews">
-
-  <div class="container center">
-
-    <span class="eyebrow">
-      STUDENT REVIEWS
-    </span>
-
-    <h2 class="section-title">
-      Real Experiences.<br>
-      No Fabricated Results.
-    </h2>
-
-    <div class="review-placeholder">
-
-      <h3>
-        Student Reviews Coming Soon
-      </h3>
-
-      <p>
-        We don't publish fabricated testimonials or invented
-        student scores. Genuine feedback will appear here
-        as it becomes available.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FAQ
-========================= -->
-
-<section class="section faq-section" id="faq">
-
-  <div class="container">
-
-    <div class="center">
-
-      <span class="eyebrow">
-        QUESTIONS
-      </span>
-
-      <h2 class="section-title">
-        Frequently Asked Questions.
-      </h2>
-
-    </div>
-
-
-    <div class="faq">
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          What is IELTS MASTER?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          IELTS MASTER is a focused IELTS preparation masterclass
-          designed around the IELTS test, scoring criteria,
-          strategies and common mistakes.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          How long is the course?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          The masterclass is a 3-hour intensive session.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          How much does it cost?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          The course price is Rs. 500.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          How do I enroll?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          Contact IELTS MASTER through WhatsApp at
-          +977 9707450833 for enrollment instructions.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          Is this a beginner English course?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          No. IELTS MASTER is an IELTS-focused strategy
-          and preparation masterclass.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          Can this guarantee Band 8?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          No. IELTS MASTER does not guarantee an individual
-          IELTS score. Results depend on English proficiency,
-          preparation and performance on test day.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          Is it suitable for Academic IELTS?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          Yes. The course covers IELTS concepts relevant to
-          Academic IELTS and explains the differences between
-          Academic and General Training where applicable.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          Is it suitable for General Training?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          Yes. The course explains the relevant differences
-          between Academic and General Training.
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          How do I pay?
-          <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-          Contact us through WhatsApp for enrollment
-          and payment instructions.
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FINAL CTA
-========================= -->
-
-<section class="final-cta">
-
-  <div class="container final-cta-content">
-
-    <span class="eyebrow">
-      THE FINAL STEP BEFORE TEST DAY
-    </span>
-
-    <h2>
-      Understand The Test.<br>
-      Improve Your Approach.
-    </h2>
-
-    <p>
-      Master the structure. Understand the scoring.
-      Learn practical strategies. Prepare with clarity.
-    </p>
-
-    <div class="final-price">
-      Rs. 500
-    </div>
-
-    <a
-      class="btn btn-primary"
-      href="https://wa.me/9779707450833?text=Hi%2C%20I%E2%80%99m%20ready%20to%20join%20the%20IELTS%20Master%20Course%20for%20Rs.%20500.%20Please tell me how to enroll."
-      target="_blank"
-      rel="noopener"
-    >
-      JOIN IELTS MASTER →
-    </a>
-
-    <span class="phone">
-      WhatsApp: +977 9707450833
-    </span>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-  <div class="container">
-
-    <div class="footer-top">
-
-      <div class="footer-brand">
-
-        <div class="logo">
-          IELTS <span>MASTER</span>
-        </div>
-
-        <p>
-          The Final 3-Hour IELTS Intensive.
-        </p>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <a href="#course">Course</a>
-        <a href="#curriculum">Curriculum</a>
-        <a href="#skills">Listening</a>
-        <a href="#skills">Reading</a>
-        <a href="#scoring">Scoring</a>
-        <a href="#criteria">Writing</a>
-        <a href="#criteria">Speaking</a>
-        <a href="#faq">FAQ</a>
-
-        <a href="https://wa.me/9779707450833">
-          Contact
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-      <p>
-        IELTS MASTER is an independent IELTS preparation course
-        and is not affiliated with or endorsed by IELTS, the British
-        Council, IDP IELTS or Cambridge University Press & Assessment
-        unless explicitly stated.
-      </p>
-
-      <span>
-        © 2026 IELTS MASTER
-      </span>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-<!-- =========================
-     FLOATING WHATSAPP
-========================= -->
-
-<a
-  class="whatsapp"
-  href="https://wa.me/9779707450833?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20IELTS%20MASTER."
-  target="_blank"
-  rel="noopener"
-  aria-label="Chat with IELTS MASTER on WhatsApp"
->
-  ☎
-</a>
-
-
-<!-- =========================
-     MOBILE CTA
-========================= -->
-
-<div class="mobile-cta">
-
-  <a
-    href="https://wa.me/9779707450833?text=Hi%2C%20I%E2%80%99m%20interested%20in%20joining%20the%20IELTS%20Master%20Course%20for%20Rs.%20500.%20Please%20send%20me%20the%20enrollment%20details."
-    target="_blank"
-    rel="noopener"
-  >
-    JOIN IELTS MASTER — Rs. 500
-  </a>
-
-</div>
-
-
-<script>
-
-/* =========================
-   MOBILE MENU
-========================= */
-
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
-
-menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-document.querySelectorAll(".nav-links a").forEach(link => {
-
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
-
-});
-
-
-/* =========================
-   BAND PROGRESSION
-========================= */
-
-const bandData = {
-
-  5:{
-    title:"BAND 5",
-    score:"05",
-    description:
-      "Basic organisation, task response may be limited, noticeable errors and limited vocabulary."
-  },
-
-  6:{
-    title:"BAND 6",
-    score:"06",
-    description:
-      "Better development, more consistent organisation, fewer errors and a wider vocabulary range."
-  },
-
-  7:{
-    title:"BAND 7",
-    score:"07",
-    description:
-      "Clear development, stronger coherence, flexible vocabulary and better grammatical control."
-  },
-
-  8:{
-    title:"BAND 8",
-    score:"08",
-    description:
-      "Precision, flexibility, strong control, consistency and very few errors."
-  }
-
-};
-
-
-document.querySelectorAll(".band-btn").forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    document.querySelectorAll(".band-btn")
-      .forEach(btn => btn.classList.remove("active"));
-
-    button.classList.add("active");
-
-    const band = button.dataset.band;
-
-    document.getElementById("bandTitle").textContent =
-      bandData[band].title;
-
-    document.getElementById("bandDescription").textContent =
-      bandData[band].description;
-
-    document.getElementById("bandScore").textContent =
-      bandData[band].score;
-
-  });
-
-});
-
-
-/* =========================
-   CURRICULUM
-========================= */
-
-document.querySelectorAll(".module-button").forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    const module = button.parentElement;
-
-    const isOpen = module.classList.contains("open");
-
-    document.querySelectorAll(".module")
-      .forEach(item => item.classList.remove("open"));
-
-    if(!isOpen){
-      module.classList.add("open");
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function toggleModule(button) {
+      const module = button.parentElement;
+      const allModules = document.querySelectorAll('.module');
+
+      // Close all modules
+      allModules.forEach(m => m.classList.remove('active'));
+
+      // Open clicked module
+      module.classList.add('active');
     }
 
-  });
+    function showBand(id) {
+      const allBands = document.querySelectorAll('.band-content');
+      const allBtns = document.querySelectorAll('.band-btn');
 
-});
+      allBands.forEach(band => band.style.display = 'none');
+      allBtns.forEach(btn => btn.classList.remove('active'));
 
-
-/* =========================
-   FAQ
-========================= */
-
-document.querySelectorAll(".faq-question").forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    const item = button.parentElement;
-
-    const isOpen = item.classList.contains("open");
-
-    document.querySelectorAll(".faq-item")
-      .forEach(faq => faq.classList.remove("open"));
-
-    if(!isOpen){
-      item.classList.add("open");
+      document.getElementById(id).style.display = 'flex';
+      event.target.classList.add('active');
     }
-
-  });
-
-});
-
-
-/* =========================
-   IELTS BAND CALCULATOR
-========================= */
-
-function roundIELTSBand(score){
-
-  const base = Math.floor(score);
-  const decimal = score - base;
-
-  if(decimal >= 0.75){
-    return Math.ceil(score);
-  }
-
-  if(decimal >= 0.25){
-    return base + 0.5;
-  }
-
-  return base;
-
-}
-
-
-document
-  .getElementById("calculateBand")
-  .addEventListener("click", () => {
-
-    const listening =
-      parseFloat(document.getElementById("listening").value);
-
-    const reading =
-      parseFloat(document.getElementById("reading").value);
-
-    const writing =
-      parseFloat(document.getElementById("writing").value);
-
-    const speaking =
-      parseFloat(document.getElementById("speaking").value);
-
-
-    const scores = [
-      listening,
-      reading,
-      writing,
-      speaking
-    ];
-
-
-    if(
-      scores.some(score =>
-        isNaN(score) ||
-        score < 0 ||
-        score > 9
-      )
-    ){
-
-      document.getElementById("calculatorResult").textContent =
-        "Please enter valid scores between 0 and 9.";
-
-      return;
-
-    }
-
-
-    const average =
-      scores.reduce((sum,score) => sum + score,0) / 4;
-
-
-    const overall =
-      roundIELTSBand(average);
-
-
-    document.getElementById("calculatorResult").innerHTML =
-
-      `
-        Average score:
-        <strong>${average.toFixed(3)}</strong>
-
-        <br><br>
-
-        Estimated Overall IELTS Band:
-        <strong style="color:white;font-size:20px;">
-          ${overall.toFixed(1)}
-        </strong>
-      `;
-
-  });
-
-
-/* =========================
-   CHECKLIST
-========================= */
-
-const checklistInputs =
-  document.querySelectorAll(
-    '.check-item input[type="checkbox"]'
-  );
-
-
-checklistInputs.forEach((checkbox,index) => {
-
-  const saved =
-    localStorage.getItem("ielts_check_" + index);
-
-  checkbox.checked =
-    saved === "true";
-
-
-  checkbox.addEventListener("change", () => {
-
-    localStorage.setItem(
-      "ielts_check_" + index,
-      checkbox.checked
-    );
-
-  });
-
-});
-
-
-document
-  .getElementById("saveChecklist")
-  .addEventListener("click", () => {
-
-    checklistInputs.forEach((checkbox,index) => {
-
-      localStorage.setItem(
-        "ielts_check_" + index,
-        checkbox.checked
-      );
-
-    });
-
-
-    const message =
-      document.getElementById("checkMessage");
-
-    message.textContent =
-      "Checklist saved ✓";
-
-
-    setTimeout(() => {
-
-      message.textContent = "";
-
-    },2000);
-
-  });
-
-
-/* =========================
-   WHATSAPP TRACKING
-========================= */
-
-function trackEvent(name,data={}){
-
-  if(typeof gtag === "function"){
-
-    gtag("event",name,data);
-
-  }
-
-}
-
-
-document
-  .querySelectorAll('a[href*="wa.me"]')
-  .forEach(link => {
-
-    link.addEventListener("click",() => {
-
-      trackEvent("whatsapp_click",{
-        page:window.location.pathname,
-        link:link.href
-      });
-
-    });
-
-  });
-
-
-document
-  .getElementById("calculateBand")
-  .addEventListener("click",() => {
-
-    trackEvent("calculator_used");
-
-  });
-
-
-document
-  .querySelectorAll(".band-btn")
-  .forEach(button => {
-
-    button.addEventListener("click",() => {
-
-      trackEvent("band_slider_used",{
-        band:button.dataset.band
-      });
-
-    });
-
-  });
-
-
-document
-  .querySelectorAll(".faq-question")
-  .forEach(button => {
-
-    button.addEventListener("click",() => {
-
-      trackEvent("faq_opened",{
-        question:button.innerText
-      });
-
-    });
-
-  });
-
-</script>
+  </script>
 
 </body>
 </html>
-```
